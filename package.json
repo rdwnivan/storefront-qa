@@ -1,0 +1,19 @@
+{
+  "name": "storefront-e2e",
+  "version": "1.0.0",
+  "description": "End-to-end tests for StoreFront Admin Panel",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:overview": "playwright test tests/overview.spec.ts",
+    "test:products": "playwright test tests/products.spec.ts",
+    "test:orders": "playwright test tests/orders.spec.ts",
+    "test:cart": "playwright test tests/cart.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0"
+  }
+}
